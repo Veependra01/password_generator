@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>password genrator</title>
+</head>
+<body>
+    <h1> this is a simple password genrator.</h1>
+    <div class="container">
+        <form action="index.php" id="myform">
+            <label for="number">length of password (between 0 to 50) : </label>
+            <input type="number" min="0" max="50" id="num">
+            <br>
+            <p>Your password contains : </p>
+            <br>
+            <input type="checkbox" name="" id="capital">
+            <label for="checkbox">Capital Alphabat</label>
+            <br>
+            <input type="checkbox" name="" id="small">
+            <label for="checkbox">Small Alphabat</label>
+            <br>
+            <input type="checkbox" name="" id="number">
+            <label for="checkbox">Numeric Value</label>
+            <br>
+            <input type="checkbox" name="" id="Spacial">
+            <label for="checkbox">Spacial Charecter</label>
+            <br>
+        </form>
+    </div>
+    <button class="para" onclick="myfun()">Genrate password</button>
+    <p class="para"> Your password is </p>
+    <p class ="para" id="answer"></p>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
